@@ -1,0 +1,6 @@
+---
+en:
+  decidim:
+    components:
+      voting_budgets_rule:
+        name: VotingBudgetsRule
