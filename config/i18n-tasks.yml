@@ -5,6 +5,16 @@ locales: [en]
 
 ignore_unused:
   - "decidim.components.voting_budgets_rule.name"
+  - decidim.budgets.projects.budget_summary.minimum_projects_rule.*
+  - decidim.budgets.projects.budget_summary.projects_rule.*
+  - decidim.budgets.projects.budget_summary.projects_rule_maximum_only.*
+  - decidim.budgets.projects.budget_summary.vote_threshold_percent_rule.*
+  - decidim.budgets.projects.budget_excess.description
+  - decidim.components.budgets.settings.global.vote_selected_projects_maximum
+  - decidim.components.budgets.settings.global.vote_selected_projects_minimum
+  - decidim.components.budgets.settings.global.vote_rule_selected_projects_enabled
 
 ignore_missing:
   - decidim.participatory_processes.scopes.global
+  - decidim.budgets.projects_helper.current_rule_explanation.*
+  - decidim.budgets.projects_helper.current_rule_description.*

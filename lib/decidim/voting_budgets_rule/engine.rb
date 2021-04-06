@@ -16,7 +16,19 @@ module Decidim
       end
 
       initializer "decidim_voting_budgets_rule.assets" do |app|
-        app.config.assets.precompile += %w[decidim_voting_budgets_rule_manifest.js decidim_voting_budgets_rule_manifest.css]
+        app.config.assets.precompile += %w(decidim_voting_budgets_rule_manifest.js decidim_voting_budgets_rule_manifest.css)
+      end
+
+      initializer "add_cells_view_paths" do
+        # Insert cell in second position to allow overriding
+        Cell::ViewModel.view_paths.insert(
+          Cell::ViewModel.view_paths.index(Rails.root.join("app", "cells")) + 1,
+          File.expand_path("#{root}/app/cells")
+        )
+      end
+
+      initializer "extend_component" do
+        require "decidim/extends/component_extend"
       end
     end
   end

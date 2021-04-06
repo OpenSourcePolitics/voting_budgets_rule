@@ -78,7 +78,7 @@ module Decidim
         end
 
         it "returns resource results" do
-          Decidim::Search.call("Ow", organization, resource_type: resource.class.name) do
+          described_class.call("Ow", organization, resource_type: resource.class.name) do
             on(:ok) do |results_by_type|
               results = results_by_type[resource.class.name]
               expect(results[:count]).to eq 2
@@ -89,7 +89,7 @@ module Decidim
         end
 
         it "allows searching by prefix characters" do
-          Decidim::Search.call("wait", organization, resource_type: resource.class.name) do
+          described_class.call("wait", organization, resource_type: resource.class.name) do
             on(:ok) do |results_by_type|
               results = results_by_type[resource.class.name]
               expect(results[:count]).to eq 1
