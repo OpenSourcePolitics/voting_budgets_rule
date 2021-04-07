@@ -18,7 +18,7 @@ en:
             title: Maximum projects exceeded
         budget_summary:
           are_you_sure: Are you sure
-          assigned: Assigned
+          assigned: 'Assigned :'
           cancel_order: Cancel order
           checked_out:
             description: Description
