@@ -18,11 +18,11 @@ en:
             title: Maximum projects exceeded
         budget_summary:
           are_you_sure: Are you sure
-          assigned: 'Assigned :'
+          assigned: 'Assigned:'
           cancel_order: Cancel order
           checked_out:
-            description: Description
-            title: Title
+            description: You've already voted for the budget. If you've changed your mind, you can %{cancel_link}.
+            title: Budget vote completed
           minimum_projects_rule:
             description: What projects do you think we should allocate budget for?
               Select at least %{minimum_number} projects you want and vote according
@@ -44,7 +44,7 @@ en:
               vote according to your preferences to define the budget.</li>"
           rules:
             title: Budget rules
-          title: Title
+          title: You decide the budget
           total_budget: Total budget
           total_projects: Total votes
           vote_threshold_percent_rule:
