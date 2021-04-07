@@ -3,6 +3,7 @@ name: RuboCop
 on:
   push:
     branches:
+      - master
       - develop
       - release/*
       - "*-stable"
