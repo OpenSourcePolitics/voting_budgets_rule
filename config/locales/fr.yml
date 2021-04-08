@@ -5,46 +5,46 @@ fr:
       projects:
         budget_excess:
           budget_excess:
-            description: This project exceeds the maximum budget and can not be added. If you want, you can delete a project you have already selected to add, or make your vote according to your preferences.
-            title: Maximum budget exceeded
-          close: Close
-          ok: Ok
+            description: Ce projet dépasse le budget maximum et ne peut pas être ajouté. Si vous le souhaitez, vous pouvez supprimer un projet que vous avez déjà sélectionné puis voter de nouveau selon vos préférences.
+            title: Budget maximum dépassé
+          close: Fermer
+          ok: D'accord
           projects_excess:
-            description: This project exceeds the maximum number of projects and cannot be added. If you want, you can delete a project you have already selected to add, or make your vote according to your preferences.
-            title: Maximum projects exceeded
+            description: Vous avez dépassé le nombre maximum de projets à sélectionner, ce projet ne peut donc être ajouté. Si vous le souhaitez, vous pouvez supprimer un projet que vous avez déjà sélectionné puis voter de nouveau selon vos préférences.
+            title: Nombre maximum de projets dépassé
         budget_summary:
-          are_you_sure: Are you sure
-          assigned: Assigned
-          cancel_order: Cancel order
+          are_you_sure: Êtes-vous certain de vouloir annuler votre vote ?
+          assigned: 'Affecté à :'
+          cancel_order: supprimer votre vote et recommencer
           checked_out:
-            description: Description
-            title: Title
+            description: Vous avez déjà voté pour le budget. Si vous avez changé d'avis, vous pouvez %{cancel_link}.
+            title: Vote du budget terminé
           minimum_projects_rule:
-            description: What projects do you think we should allocate budget for? Select at least %{minimum_number} projects you want and vote according to your preferences to define the budget.
-            instruction: "<li>Select at least %{minimum_number} projects you want and vote according to your preferences to define the budget.</li>"
+            description: A quels projets pensez-vous que nous devrions allouer un budget ? Sélectionnez au moins %{minimum_number} projets que vous soutenez et votez selon vos préférences pour définir le budget.
+            instruction: "<li>Sélectionnez au moins %{minimum_number} projets que vous souhaitez voir se réaliser et votez selon vos préférences pour définir le budget.</li>"
           projects_rule:
-            description: What projects do you think we should allocate budget for? Select at least %{minimum_number} and up to %{maximum_number} projects you want and vote according to your preferences to define the budget.
-            instruction: "<li>Select at least %{minimum_number} and up to %{maximum_number} projects you want and vote according to your preferences to define the budget.</li>"
+            description: A quels projets pensez-vous que nous devrions allouer un budget ? Sélectionnez entre %{minimum_number} et %{maximum_number} projets que vous soutenez et votez selon vos préférences pour définir le budget.
+            instruction: "<li>Sélectionnez entre %{minimum_number} et %{maximum_number} projets que vous souhaitez et votez selon vos préférences pour définir le budget.</li>"
           projects_rule_maximum_only:
-            description: What projects do you think we should allocate budget for? Select up to %{maximum_number} projects you want and vote according to your preferences to define the budget.
-            instruction: "<li>Select up to %{maximum_number} projects you want and vote according to your preferences to define the budget.</li>"
+            description: A quels projets pensez-vous que nous devrions allouer un budget ? Sélectionnez au maximum %{maximum_number} projets que vous soutenez et votez selon vos préférences pour définir le budget.
+            instruction: "<li>Sélectionnez au maximum %{maximum_number} projets que vous souhaitez et votez selon vos préférences pour définir le budget.</li>"
           rules:
-            title: Budget rules
-          title: Title
-          total_budget: Total budget
-          total_projects: Total votes
+            title: Règles du vote
+          title: Vous décidez du budget
+          total_budget: Budget total
+          total_projects: Total des votes
           vote_threshold_percent_rule:
-            description: What projects do you think we should allocate budget for? Assign at least %{minimum_budget} to the projects you want and vote according to your preferences to define the budget.
-            instruction: "<li>Assign at least %{minimum_budget} to the projects you want and vote according to your preferences to define the budget.</li>"
+            description: À quels projets pensez-vous que nous devrions allouer un budget ? Assignez au moins %{minimum_budget} aux projets que vous soutenez et votez selon vos préférences pour définir le budget.
+            instruction: "<li>Assignez au moins %{minimum_budget} aux projets que vous soutenez et votez selon vos préférences pour définir le budget.</li>"
         order_progress:
           vote: Vote
         project:
-          add: Add
-          remove: Remove
+          add: Ajouter à votre vote
+          remove: Retirer le projet %{resource_name} de votre vote
     components:
       budgets:
         settings:
           global:
-            vote_rule_selected_projects_enabled: 'Enable rule: Selected projects with minimum and maximum number of projects to be voted on'
-            vote_selected_projects_maximum: Minimum amount of projects to be selected
-            vote_selected_projects_minimum: Maximum amount of projects to be selected
+            vote_rule_selected_projects_enabled: 'Activer la règle : Nombre minimum et maximum de projets à voter'
+            vote_selected_projects_maximum: Nombre minimum de projets à sélectionner
+            vote_selected_projects_minimum: Nombre maximum de projets à sélectionner
